@@ -1,7 +1,18 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      transparent: 'transparent',
+      gray: colors.trueGray,
+      red: colors.red,
+      green: colors.green,
+      blue: colors.blue,
+      yellow: colors.yellow,
+      white: colors.white,
+      black: colors.black,
+    },
     //   We are gonna completely rewrite the configurations so we cannot use the default tailwind css classes!
     fontSize: {
       xs: ['.75rem', '1rem'],

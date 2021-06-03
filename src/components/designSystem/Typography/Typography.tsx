@@ -63,7 +63,10 @@ const TypographyHelper = ({ title, values }: any) => {
       {/* <div className='text-gray-500 uppercase tracking-wider'>{title}</div> */}
       <div>
         {values.map((value: string) => (
-          <div className='py-1'>
+          <div
+            className='py-1 cursor-copy'
+            onClick={() => navigator.clipboard.writeText(value)}
+          >
             <span className={`${value}`}>
               {title}:{` `}
             </span>

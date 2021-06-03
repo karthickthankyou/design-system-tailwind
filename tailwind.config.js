@@ -28,10 +28,19 @@ module.exports = {
       'extra-bold': 800,
       //   black: 900,
     },
-    extend: {},
+    extend: {
+      cursor: {
+        copy: 'copy',
+        grab: 'grab',
+        grabbing: 'grabbing',
+      },
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      cursor: ['hover', 'active'],
+      boxShadow: ['active'],
+    },
   },
   plugins: [],
 }

@@ -7,9 +7,12 @@ export default {
   component: Text,
 } as Meta
 
-const Template: Story<ITextProps> = (args) => <Text {...args} />
+const Template: Story<ITextProps> = (args) => (
+  <Text {...args}>{args.children}</Text>
+)
 
 export const Primary = Template.bind({})
 Primary.args = {
-  size: 'lg',
+  size: 'text-lg',
+  children: 'Hello World',
 }
